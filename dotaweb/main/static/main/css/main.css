@@ -1,15 +1,15 @@
 body {
-    background: #696969;
+    background: #FAEBD7;
 }
 
 aside {
     float: left;
-    background: #191970;
+    background: #808080;
     width: 22%;
     padding: 2.5%;
     height: 100vh;
     color: #ffffff;
-    border-right: 5px solid #DA70D6;
+    border-right: 5px solid #a890a7;
 }
 
 aside img {
