@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор режима</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main/css/main.css') }}">
+</head>
+<body class="center dark-bg">
+    <button class="main-btn" onclick="window.location.href='{{ url_for('role') }}'">Выбрать роль</button>
+    <button class="main-btn" onclick="window.location.href='{{ url_for('full_random') }}'">Полный рандом</button>
+</body>
+</html>

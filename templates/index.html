@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Воля габена</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main/css/main.css') }}">
+</head>
+<body>
+    <aside>
+        <img src="logo.png" alt="Логотип" class="logo">
+        <h3>Воля габена</h3>
+        <ul>
+            <li><button id="randomHeroButton">Случайный Герой</button></li>
+            <li><button id="randomItemButton">Случайный Предмет</button></li>
+        </ul>
+    </aside>
+    <main>
+        <h1>Добро пожаловать в волю габена!</h1>
+        <div id="result">
+            <p id="heroResult">Выбранный герой: <span id="heroName"></span></p>
+            <p id="itemResult">Выбранный предмет: <span id="itemName"></span></p>
+        </div>
+    </main>
+    <script>
+        const heroes = ["Anti-Mage", "Axe", "Bane", "Bloodseeker", "Crystal Maiden", "Slark" ];
+        const items = ["Aghanim's Scepter", "Black King Bar", "Blink Dagger", "Boots of Travel", "Daedalus", "Boots of travel"];
+
+        document.getElementById('randomHeroButton').onclick = function() {
+            const randomHero = heroes[Math.floor(Math.random() * heroes.length)];
+            document.getElementById('heroName').innerText = randomHero;
+        };
+
+        document.getElementById('randomItemButton').onclick = function() {
+            const randomItem = items[Math.floor(Math.random() * items.length)];
+            document.getElementById('itemName').innerText = randomItem;
+        };
+    </script>
+</body>
+</html>

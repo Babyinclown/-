@@ -1,0 +1,142 @@
+body {
+    background: #FAEBD7;
+}
+
+body.dark-bg {
+    background: #1a2421;
+    color: #c6f7c3;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: background 0.5s;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+aside {
+    float: left;
+    background: #808080;
+    width: 22%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #ffffff;
+    border-right: 5px solid #a890a7;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    color: #ffffff;
+    display: block;
+    margin-top: 15px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #da7b7b;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: fadeIn 0.7s;
+}
+
+.main-title {
+    font-size: 3em;
+    margin-bottom: 2em;
+    color: #7fff7f;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #2e4d2e;
+}
+
+.main-btn {
+    background: linear-gradient(90deg, #2e4d2e 0%, #4caf50 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1em 2em;
+    font-size: 1.3em;
+    margin: 1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #000a;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.main-btn:hover {
+    background: linear-gradient(90deg, #4caf50 0%, #2e4d2e 100%);
+    transform: scale(1.05);
+}
+
+.main-select {
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    border: 1px solid #4caf50;
+    margin-bottom: 1em;
+    background: #222;
+    color: #7fff7f;
+}
+
+.highlight {
+    color: #7fff7f;
+    font-weight: bold;
+}
+
+.hero-icon {
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #000a;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

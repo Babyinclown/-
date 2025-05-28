@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main/css/main.css') }}">
+</head>
+<body class="center dark-bg">
+    <img src="{{ url_for('static', filename='main/img/' + hero + '.png') }}" alt="{{ hero }}" class="hero-icon" style="width:256 × 144px;height:256 × 144px;margin-bottom:20px;">
+    <h2>Твой герой: <span class="highlight">{{ hero }}</span></h2>
+    <h3>Сборка:</h3>
+    <ul>
+        {% for item in build %}
+        <li class="highlight">{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <button class="main-btn" onclick="window.location.href='{{ url_for('home') }}'">На главную</button>
+    <form method="post" style="margin-top: 20px;">
+        <input type="hidden" name="role" value="{{ request.form.get('role', '') }}">
+        <input type="hidden" name="reroll" value="1">
+        <button class="main-btn" type="submit">Рерол</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор роли</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main/css/main.css') }}">
+</head>
+<body class="center dark-bg">
+    <form method="post">
+        <select name="role" class="main-select">
+            <option value="мидер">Мидер</option>
+            <option value="керри">Керри</option>
+            <option value="тройка">Тройка</option>
+            <option value="семи сап">Семи сап</option>
+            <option value="фул сап">Фул сап</option>
+        </select>
+        <button class="main-btn" type="submit">Выбрать</button>
+    </form>
+</body>
+</html>
